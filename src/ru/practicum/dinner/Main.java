@@ -14,7 +14,7 @@ public class Main {
 
         while (true) {
             printMenu();
-            String command = scanner.nextLine();
+            String command = scanner.nextLine().trim();
 
             switch (command) {
                 case "1":
@@ -25,6 +25,9 @@ public class Main {
                     break;
                 case "3":
                     return;
+                default:
+                    System.out.println("Введен не верный номер команды");
+                    break;
             }
         }
     }
